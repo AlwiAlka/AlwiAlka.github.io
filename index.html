@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Alwi.</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience </a>
+        </nav>
+        <div class="menu">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="home-description">
+            <div class="home-content">
+                <h1>Hi... <span class="myname">I'm Alwi Alkautsar</span></h1>
+                <h3>I'm an English Teacher &</h3>
+                <h3>a Front-end Developer</h3>
+                <p>I've been teaching english for about 5 years.
+                <p>I'm interested in web developer.</p>
+                </p>
+                <h4>I hope I can be a good teacher and also a fullstack web developer.</h4>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="img/alkasea.jpg" alt="alka">
+            <span class="circle-spin-hero"></span>
+        </div>
+
+    </section>
+
+
+    <!-- about  -->
+    <section class="about" id="about">
+        <svg class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#081b29" fill-opacity="1"
+                d="M0,128L80,122.7C160,117,320,107,480,117.3C640,128,800,160,960,165.3C1120,171,1280,149,1360,138.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+            </path>
+        </svg>
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="img-note">
+                <img src="img/note1.png" alt="">
+            </div>
+            <div class="img-note">
+                <img src="img/note2.png" alt="">
+            </div>
+            <div class="img-note">
+                <img src="img/note3.png" alt="">
+            </div>
+            <div class="img-note">
+                <img src="img/note4.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+
+    <section class="experience" id="experience">
+        <svg class="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#0a2c44" fill-opacity="1"
+                d="M0,128L80,122.7C160,117,320,107,480,117.3C640,128,800,160,960,165.3C1120,171,1280,149,1360,138.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+            </path>
+        </svg>
+        <h2 class="heading">My <span>Experience</span></h2>
+        <div class="about-exp">
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5>English Teacher</h5>
+                        <p>at SMPIT Unggulan Albarokah Madani <span class="year">(2019-2022)</span></p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Detail</button>
+                </div>
+                <p class="about-exp-item-detail">I teach English in 7<sup>th</sup> grade to 9<sup>th</sup> grade. And I
+                    also english extracurricular teaher. </p>
+            </div>
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5>English Teacher</h5>
+                        <p>at SMK Plus Madaniah <span class="year">(2017-2019)</span></p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Detail</button>
+                </div>
+                <p class="about-exp-item-detail">I teach English in 7<sup>th</sup> grade to 9<sup>th</sup> grade. And I
+                    also english extracurricular teaher. </p>
+            </div>
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5>Proctor UNBK & ANBK</h5>
+                        <p>at SMK Plus Madaniah <span class="year">(2018-2019)</span></p>
+                        <p>at SMPIT Unggulan Albarokah Madani <span class="year">(2021-2022)</span></p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Detail</button>
+                </div>
+                <p class="about-exp-item-detail">I teach English in 7<sup>th</sup> grade to 9<sup>th</sup> grade. And I
+                    also english extracurricular teaher. </p>
+            </div>
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5>Administrative Staff</h5>
+                        <p>at SMK Plus Madaniah <span class="year">(2016-2018)</span></p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Detail</button>
+                </div>
+                <p class="about-exp-item-detail">I teach English in 7<sup>th</sup> grade to 9<sup>th</sup> grade. And I
+                    also english extracurricular teaher. </p>
+            </div>
+
+        </div>
+    </section>
+    <div class="whatsapp">
+        <a href="https://wa.me/message/47GGANHPWQOSB1"><i class='bx bxl-whatsapp'></i></a>
+
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <h5>Coded by <a href="#">Alwi 😊</a></h5>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</body>
+
+</html>

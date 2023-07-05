@@ -9,6 +9,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
@@ -16,6 +19,8 @@
 body {
   background-color: var(--black);
   color: white;
+  width: 100%;
+  /* overflow-x: hidden; */
 }
 
 html {
@@ -229,7 +234,7 @@ span {
   margin: 3rem 5rem;
   padding: 1rem 3rem;
   border: 3px solid #00abf0;
-  border-radius: 6rem;
+  border-radius: 1rem;
 }
 
 .about-exp-item-header {
@@ -288,7 +293,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #0a2c44;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .home-sci {
@@ -508,6 +513,7 @@ footer a {
     display: inline-block;
     font-size: 2.5rem;
   }
+
   .navbar {
     display: none;
     position: absolute;
@@ -516,8 +522,9 @@ footer a {
     width: 100%;
     top: 0;
     right: 0;
-    padding: 1rem 0.5rem;
+    padding: 1rem 0;
     transition: 1s;
+    justify-content: center;
   }
 
   .navbar.show {
@@ -527,19 +534,133 @@ footer a {
   }
 
   .navbar.show a {
-    padding: 1rem 4rem 2rem 1rem;
+    padding: 1rem 0;
     /* background-color: #00abf0; */
   }
 
+  .hero-img img {
+    width: 8rem;
+  }
+
+  .circle-spin-hero {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+  }
   .heading {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+
+  .home {
+    width: 100%;
+    padding: 0;
+    height: 40rem;
+  }
+
+  .home-description .home-content {
+    /* background-color: aqua; */
+    width: 15rem;
+    /* padding-left: 1.5rem; */
+  }
+
+  .home-content h1 {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  .home-content h3 {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #00abf0;
+  }
+
+  .home-content p,
+  .home-content h4 {
+    font-size: 0.8rem;
+    width: 15rem;
+  }
+
+  .about-content .img-note {
+    width: 15rem;
+    padding: 0;
+    margin: 0;
+    height: 10rem;
+  }
+  .about-content .img-note img {
+    width: 15rem;
+  }
+
+  .about-exp-item-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    row-gap: 1rem;
+  }
+  .about-exp-item-header h5 {
+    font-size: 1rem;
+  }
+  .about-exp-item-header p {
+    font-size: 0.8rem;
+    margin: 0 0 0.2rem 0;
+  }
+
+  .year {
+    display: inline;
+  }
+
+  .about-exp-item-header button {
+    align-self: center;
+  }
+
+  .whatsapp {
+    width: 2rem;
+    height: 2rem;
+    /* background-color: wheat; */
+    display: flex;
+    right: 2.5rem;
+    bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+  }
+  .whatsapp .bx {
+    color: rgb(7, 218, 7);
+    background-color: rgb(247, 253, 253);
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: 0.2rem;
+  }
+}
+
+/* @media screen and (max-width: 450px) {
+  .home,
+  .about,
+  .experience,
+  footer {
+    width: 100%;
+    position: relative;
+    left: 5rem;
+  }
+
+  .heading {
+    font-size: 2.5rem;
   }
 
   .home-description {
     width: 20rem;
   }
   .home-description .home-content {
-    /* background-color: aqua; */
+    background-color: aqua;
     width: 20rem;
   }
 
@@ -560,13 +681,13 @@ footer a {
   .home-content p,
   .home-content h4 {
     font-size: 1.1rem;
-    width: 20rem;
+    width: 100%;
   }
 
   .about-content .img-note {
-    width: 23rem;
+    width: 100%;
   }
   .about-content .img-note img {
-    width: 23rem;
+    width: 10rem;
   }
-}
+} */

@@ -120,7 +120,7 @@ nav .active {
   font-size: 1.3rem;
   color: white;
   position: relative;
-  margin: 0.5rem 0;
+  margin: 0.2rem 0;
 }
 
 .home-content h4 {
@@ -523,7 +523,7 @@ footer a {
     top: 0;
     right: 0;
     padding: 1rem 0;
-    transition: 1s;
+    transition: 0.5s;
     justify-content: center;
   }
 

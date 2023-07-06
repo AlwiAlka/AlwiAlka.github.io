@@ -164,8 +164,6 @@ nav .active {
 .about .arrow-down {
   display: none;
   position: absolute;
-  /* background-color: rgb(209, 59, 59); */
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   top: -5rem;
@@ -174,18 +172,12 @@ nav .active {
 }
 
 .arrow-down .arrow {
-  /* display: flex; */
   position: relative;
-  /* top: -2rem; */
-  font-size: 1.5rem;
 }
-.bx-down-arrow-alt {
-  z-index: 1;
+.bx-chevrons-down {
   color: white;
-  font-size: 5rem;
   display: flex;
   position: relative;
-  /* top: -1rem; */
   animation: bounce 2s ease-in-out infinite;
 }
 
@@ -674,10 +666,8 @@ footer a {
     display: flex;
   }
 
-  .arrow-down .arrow {
-    font-size: 0.6rem;
-  }
-  .bx-down-arrow-alt {
-    font-size: 1rem;
+  .bx-chevrons-down {
+    font-size: 1.5rem;
+    color: white;
   }
 }

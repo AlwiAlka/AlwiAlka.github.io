@@ -162,7 +162,7 @@ nav .active {
 /* about */
 
 .about .arrow-down {
-  display: flex;
+  display: none;
   position: absolute;
   /* background-color: rgb(209, 59, 59); */
   flex-direction: column;
@@ -668,5 +668,16 @@ footer a {
     border-radius: 50%;
     font-size: 2rem;
     padding: 0.2rem;
+  }
+
+  .about .arrow-down {
+    display: flex;
+  }
+
+  .arrow-down .arrow {
+    font-size: 0.6rem;
+  }
+  .bx-down-arrow-alt {
+    font-size: 1rem;
   }
 }

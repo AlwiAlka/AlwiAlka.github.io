@@ -26,6 +26,8 @@ window.onscroll = () => {
     let height = section.offsetHeight;
     let id = section.getAttribute("id");
 
+    console.log(top);
+
     if (top >= offset && top < offset + height) {
       // active navbar links
       navLinks.forEach(function (link) {
@@ -35,6 +37,16 @@ window.onscroll = () => {
           .classList.add("active");
       });
     }
+
+    // ABOUT
+
+    const toast = document.querySelector(".toast");
+    if (top >= 640) {
+      toast.classList.add("alert");
+    }
+    setTimeout(() => {
+      toast.classList.add("alnone");
+    }, 2000);
   });
   // sticky header
   let header = document.querySelector("header");

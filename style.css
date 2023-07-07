@@ -540,6 +540,25 @@ footer a {
     margin: 3rem 0;
     padding: 1rem 1rem;
   }
+  .toast {
+    display: flex;
+    position: absolute;
+    top: 11rem;
+    transform: translateX(-50%);
+    border-radius: 0.6rem;
+    background: #fff;
+    padding: 0.8rem;
+    box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+    right: 1rem;
+  }
+  .toast.alert {
+    display: flex;
+  }
+
+  .toast.alert.alnone {
+    display: none;
+  }
 
   /* .about-exp-item h5 {
     font-size: 1.2rem;
@@ -598,6 +617,7 @@ footer a {
   }
   .heading {
     font-size: 2rem;
+    padding-bottom: 1.2rem;
   }
 
   .home {
@@ -695,25 +715,5 @@ footer a {
   .bx-chevrons-down {
     font-size: 1.5rem;
     color: white;
-  }
-
-  .toast {
-    display: flex;
-    position: absolute;
-    top: 10rem;
-    right: 0;
-    border-radius: 0.6rem;
-    background: #fff;
-    padding: 0.8rem;
-    box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
-    transition: 1s;
-    right: 1rem;
-  }
-  .alert {
-    display: flex;
-  }
-
-  .alert.alnone {
-    display: none;
   }
 }

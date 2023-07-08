@@ -166,15 +166,6 @@ nav .active {
 
 .toast {
   display: none;
-  position: absolute;
-  top: 9rem;
-  transform: translateX(-50%);
-  border-radius: 0.6rem;
-  background: #fff;
-  padding: 0.8rem;
-  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
-  transition: 1s;
-  right: 1rem;
 }
 
 .toast .text {
@@ -217,7 +208,7 @@ nav .active {
 
 .heading {
   font-size: 4rem;
-  margin: 1rem 0 0 0;
+  margin: 3rem 0 4rem 0;
   text-align: center;
 }
 
@@ -557,7 +548,19 @@ footer a {
   }
 
   .toast {
-    display: flex;
+    display: inline-flex;
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    border-radius: 50rem;
+    background: #f5e556;
+    padding: 0.8rem;
+    transition: 1s;
+    cursor: context-menu;
+  }
+
+  .toast .text {
+    font-weight: 900;
   }
 
   .toast.alnone {
@@ -622,6 +625,7 @@ footer a {
   .heading {
     font-size: 2rem;
     padding-bottom: 1.2rem;
+    margin: 0;
   }
 
   .home {

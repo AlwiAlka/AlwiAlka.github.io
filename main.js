@@ -43,8 +43,10 @@ window.onscroll = () => {
     const toast = document.querySelector(".toast");
     const close = document.querySelector(".close");
 
-    close.addEventListener("click", function () {
-      toast.style.display = "none";
+    $(document).ready(function () {
+      $(".close").click(function () {
+        $(".toast").fadeOut();
+      });
     });
   });
   // sticky header

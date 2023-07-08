@@ -175,10 +175,6 @@ nav .active {
   align-self: center;
 }
 
-/* .toast .close:hover {
-  opacity: 1;
-} */
-
 .about .arrow-down {
   display: none;
   position: absolute;
@@ -205,7 +201,7 @@ nav .active {
   align-items: center;
   position: relative;
   flex-direction: column;
-  gap: 2rem;
+  /* gap: 2rem; */
   background: #0a2c44;
   padding: 5rem 0;
 }
@@ -553,7 +549,7 @@ footer a {
   .toast {
     display: flex;
     position: absolute;
-    top: 11rem;
+    top: 9rem;
     transform: translateX(-50%);
     border-radius: 0.6rem;
     background: #fff;
@@ -651,7 +647,9 @@ footer a {
     font-size: 0.8rem;
     width: 15rem;
   }
-
+  .about-content {
+    padding-top: 2rem;
+  }
   .about-content .img-note {
     width: 15rem;
     padding: 0;

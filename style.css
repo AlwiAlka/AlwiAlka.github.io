@@ -166,6 +166,15 @@ nav .active {
 
 .toast {
   display: none;
+  position: absolute;
+  top: 9rem;
+  transform: translateX(-50%);
+  border-radius: 0.6rem;
+  background: #fff;
+  padding: 0.8rem;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+  right: 1rem;
 }
 
 .toast .text {
@@ -546,24 +555,23 @@ footer a {
     margin: 3rem 0;
     padding: 1rem 1rem;
   }
+
   .toast {
-    display: flex;
-    position: absolute;
-    top: 9rem;
-    transform: translateX(-50%);
-    border-radius: 0.6rem;
-    background: #fff;
-    padding: 0.8rem;
-    box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
-    transition: 1s;
-    right: 1rem;
-  }
-  .toast.alert {
     display: flex;
   }
 
-  .toast.alert.alnone {
+  .toast.alnone {
     display: none;
+  }
+
+  .close {
+    color: red;
+    font-size: 0.6rem;
+    font-weight: 900;
+    /* border: 1px solid black; */
+    padding: 3px 6px;
+    /* border-radius: 50%; */
+    cursor: pointer;
   }
 
   .year {

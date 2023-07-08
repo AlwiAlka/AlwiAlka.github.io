@@ -41,12 +41,11 @@ window.onscroll = () => {
     // ABOUT
 
     const toast = document.querySelector(".toast");
-    if (top >= 640) {
-      toast.classList.add("alert");
-    }
-    setTimeout(() => {
-      toast.classList.add("alnone");
-    }, 2000);
+    const close = document.querySelector(".close");
+
+    close.addEventListener("click", function () {
+      toast.style.display = "none";
+    });
   });
   // sticky header
   let header = document.querySelector("header");

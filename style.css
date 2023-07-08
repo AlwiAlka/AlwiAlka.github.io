@@ -55,7 +55,7 @@ html {
 }
 
 .navbar {
-  animation: slideRight 1.2s ease forwards;
+  animation: slideDown 0.3s ease forwards;
 }
 .navbar a {
   font-size: 1.2rem;
@@ -64,10 +64,7 @@ html {
   margin-left: 1.2rem;
 }
 
-.navbar a:hover {
-  color: #00abf0;
-}
-
+.navbar a:hover,
 nav .active {
   color: #00abf0;
 }
@@ -215,7 +212,7 @@ nav .active {
 
 .heading {
   font-size: 4rem;
-  margin: 3rem 0 0 0;
+  margin: 1rem 0 0 0;
   text-align: center;
 }
 
@@ -241,7 +238,7 @@ span {
   animation: bounce 2s ease-in-out infinite;
 }
 .about-content .img-note img:hover {
-  filter: brightness(110%);
+  filter: brightness(105%);
   transition: 1s;
 }
 
@@ -302,7 +299,8 @@ button {
   border-radius: 5rem;
   cursor: pointer;
 }
-.button.active {
+.button.active,
+button:hover {
   background-color: #00abf0;
 }
 
@@ -324,11 +322,13 @@ button {
   border-radius: 50%;
   font-size: 4rem;
   padding: 0.2rem;
+  transition: 0.5s;
 }
 
 .whatsapp .bx:hover {
   background-color: rgb(7, 218, 7);
   color: rgb(247, 253, 253);
+  transform: translateY(-10px);
 }
 
 footer {
@@ -442,6 +442,16 @@ footer a {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -560,14 +570,6 @@ footer a {
     display: none;
   }
 
-  /* .about-exp-item h5 {
-    font-size: 1.2rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .about-exp-item-detail {
-    display: none;
-  } */
   .year {
     display: block;
   }
@@ -583,36 +585,34 @@ footer a {
     display: none;
     position: absolute;
     background-color: black;
-    height: 7rem;
+    height: 6.25rem;
     width: 100%;
     top: 0;
     right: 0;
     padding: 1rem 0;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     justify-content: center;
   }
 
   .navbar.show {
-    /* right: 0; */
     display: flex;
     font-weight: 900;
   }
 
   .navbar.show a {
     padding: 1rem 0;
-    /* background-color: #00abf0; */
   }
 
   .hero-img img {
-    width: 8rem;
+    width: 10rem;
   }
 
   .circle-spin-hero {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0);
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
   }
   .heading {
@@ -707,7 +707,9 @@ footer a {
     font-size: 2rem;
     padding: 0.2rem;
   }
+}
 
+@media screen and (max-width: 385px) {
   .about .arrow-down {
     display: flex;
   }

@@ -173,7 +173,7 @@ nav .active {
   left: 3rem;
   border-radius: 50rem;
   background-color: #f5e556;
-  transition: .4s;
+  transition: .3s;
   opacity: 90%;
   z-index: 3;
 }
@@ -197,7 +197,7 @@ nav .active {
 
 .toast:hover::before{
 display: inline-flex;
-animation: slideLeft 1s ease forwards;
+animation: slideLeft .5s ease forwards;
 
 }
 
@@ -237,7 +237,7 @@ animation: slideLeft 1s ease forwards;
 
 .heading {
   font-size: 4rem;
-  margin: 3rem 0 4rem 0;
+  margin: 4rem 0 4rem 0;
   text-align: center;
 }
 
@@ -593,7 +593,7 @@ footer a {
 
 @media screen and (max-width: 530px) {
   .menu {
-    display: inline-block;
+    display: inline-flex;
     font-size: 2.5rem;
   }
 
@@ -737,4 +737,43 @@ footer a {
     font-size: 1.5rem;
     color: white;
   }
+
+  .toast{
+    top: 8rem;
+    left: 3rem;
+    width: 2rem; height: 2rem;
+    border-radius: 50%;
+    /* display: flex; */
+    position: absolute;
+    border: 2px solid wheat;
+    border-radius: 50rem;
+    background-color: #f5e556;
+    transition: .3s;
+  }
+  
+  .toast::before {
+    content: "Click! to make them stop to bounce";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem; height: 2rem;
+    display: none;
+    font-size: .8rem;
+  }
+  
+  
+  .toast:hover{
+    width: 16rem; height: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    color: #0a2c44;
+    opacity: 100%;
+  }
+  
+  .toast:hover::before{
+  display: inline-flex;
+  animation: slideLeft .5s ease forwards;
+  
+  }
+
 }

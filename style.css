@@ -165,15 +165,44 @@ nav .active {
 }
 
 .toast {
+  width: 3rem; height: 3rem;
+  border-radius: 50%;
+  /* display: flex; */
+  position: absolute;
+  top: 13rem;
+  left: 3rem;
+  border-radius: 50rem;
+  background-color: #f5e556;
+  transition: .4s;
+  opacity: 90%;
+  z-index: 3;
+}
+
+.toast::before {
+  content: "Click! to make them stop to bounce";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20rem; height: 3rem;
   display: none;
 }
 
-.toast .text {
-  /* font-weight: 600; */
-  font-size: 0.5rem;
-  color: #333;
-  align-self: center;
+
+.toast:hover{
+  width: 20rem; height: 3rem;
+  border-radius: 2rem;
+  color: #0a2c44;
+  opacity: 100%;
 }
+
+.toast:hover::before{
+display: inline-flex;
+animation: slideLeft 1s ease forwards;
+
+}
+
+
+
 
 .about .arrow-down {
   display: none;
@@ -545,26 +574,6 @@ footer a {
   .about-exp-item {
     margin: 3rem 0;
     padding: 1rem 1rem;
-  }
-
-  .toast {
-    display: inline-flex;
-    position: absolute;
-    top: 7.5rem;
-    left: 0;
-    border-radius: 50rem;
-    background: #f5e556;
-    padding: 0.8rem;
-    transition: 1s;
-    cursor: context-menu;
-  }
-
-  .toast .text {
-    font-weight: 900;
-  }
-
-  .toast.alnone {
-    display: none;
   }
 
   .close {

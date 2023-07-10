@@ -40,14 +40,7 @@ window.onscroll = () => {
 
     // ABOUT
 
-    const toast = document.querySelector(".toast");
-    const close = document.querySelector(".close");
 
-    $(document).ready(function () {
-      $(".close").click(function () {
-        $(".toast").fadeOut();
-      });
-    });
   });
   // sticky header
   let header = document.querySelector("header");
